@@ -1,0 +1,37 @@
+{
+	"name":"fritzmg/contao-form-code-redirect",
+	"description":"Simple Contao extension to automatically redirect a user to a specific page after he entered a \"code\" in a form. ",
+	"keywords":["contao", "form", "code", "redirect"],
+	"type":"contao-module",
+	"homepage":"http://www.inspiredminds.at",
+	"license":"GPL-2.0",
+	"authors":[
+		{
+			"name":"Fritz Michael Gschwantner",
+			"homepage":"http://www.inspiredminds.at",
+			"email":"fmg@inspiredminds.at",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"email":"fmg@inspiredminds.at",
+		"issues":"https://github.com/fritzmg/contao-form-code-redirect/issues",
+		"source":"https://github.com/fritzmg/contao-form-code-redirect",
+		"forum":"https://community.contao.org/de"
+	},
+	"require":{
+		"php":">=5.2",
+		"contao/core":">=3.1,<3.6",
+		"contao-community-alliance/composer-installer":"*"
+	},
+    "replace": {
+        "contao-legacy/form_code_redirect": "self.version"
+    },
+	"extra":{
+		"contao":{
+			"sources":{
+				"system/modules/form_code_redirect":"system/modules/form_code_redirect"
+			}
+		}
+	}
+}
